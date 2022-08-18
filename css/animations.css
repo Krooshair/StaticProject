@@ -1,0 +1,80 @@
+@keyframes navbarOptionHover {
+    0%{
+        color: crimson;
+        border-bottom: 2px solid crimson;
+    }
+
+    25%{
+        color: orange;
+        border-bottom: 2px solid orange;
+    }
+
+    35%{
+        color: pink;
+        border-bottom: 2px solid pink;
+    }
+
+    50%{
+        color: blueviolet;
+        border-bottom: 2px solid blueviolet;
+    }
+
+    65%{
+        color: rgb(178, 65, 253);
+        border-bottom: 2px solid rgb(178, 65, 253);
+    }
+
+    75%{
+        color: blue;
+        border-bottom: 2px solid blue;
+    }
+
+}
+
+@keyframes saltoPrecio{
+    0%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(-50%); 
+    }
+
+    50%{
+        transform: translateY(-100%);
+        background:#51C4D3;
+    }
+
+    75%{
+        transform: translateY(-50%);
+    }
+
+    100%{
+        transform: translateY(0);
+        background: crimson;
+    }
+
+}
+
+@keyframes escalaCarrito{
+    0%{
+        transform: scale(1.5);
+    }
+
+    25%{
+        transform: scale(1.5);
+        transform: rotate(-5deg);
+    }
+
+    50%{
+        transform: rotate(-10deg);
+    }
+
+    75%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
