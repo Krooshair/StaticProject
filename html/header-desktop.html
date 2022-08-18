@@ -24,34 +24,101 @@
         display: flex; 
         justify-content: space-between;
         background-color: #132C33;
+        padding: 10px;
+        height: 80px;
     }
 
     .menu{
         display: none;
     }
 
+    .navbar-left{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
     .logo{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
     }
 
-    .navbar-left ul,
-    .navbar-right ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      height: 60px;
+    .logo-image{
+        width: 60px;
     }
 
-    .navbar-left{
+    .logo-title{
+        margin: 0;
+        font-size: 2em;
+        color: #D8E3E7;
+    }
+
+    .logo-title span{
+        /*color: #EAB500;*/
+        color: #51C4D3;
+        font-family: 'Sofadi One', cursive;
+        font-size: 1.2em;
+    }
+
+    .navbar-left ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
 
-    .navbar-left ul {
-      margin-left: 12px;
+    .navbar-left a{
+        color: #D8E3E7;
+        text-decoration: none;
+        padding: 5px;
+        transition: all 500ms ease;
+    }
+
+    .navbar-left a:hover{
+        background-color: #126E82;
+        color: #132C33;
+        border-radius: 100%;
+    }
+
+    .navbar-right{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .navbar-right ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .navbar-right-perfil{
+        color: #51C4D3;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+    .navbar-right-message{
+        display: flex;
+    }
+
+    .navbar-right-message img{
+        width: 40px;
+    }
+
+    .navbar-right-message div{
+        width: 30px;
+        height: 27px;
+        text-align: center;
+        color: #D8E3E7;
+        background-color: crimson;
+        border-radius: 100%;
     }
 
 </style>
@@ -60,7 +127,7 @@
         <img src="../icon/icon_menu.svg" alt="menu" class="menu">
         <div class="navbar-left">
             <div class="logo">
-                <img src="../icon/palanca-de-mando.png" alt="logo" class="logo-image" width="60px">
+                <img src="../icon/palanca-de-mando.png" alt="logo" class="logo-image">
                 <h2 class="logo-title">ser<span class="logo-title-gamer">Gamer!</span></h2>
             </div>
 
@@ -73,9 +140,9 @@
         </div>
         <div class="navbar-right">
             <ul>
-                <li class="navbar-rigth-perfil"><h2>Perfil</h2></li>
-                <li class="navbar-rigth-message">
-                    <img src="../icon/mensaje.png" alt="mensajeria" class="message-imgage" width="50px">
+                <li class="navbar-right-perfil">Perfil</li>
+                <li class="navbar-right-message">
+                    <img src="../icon/mensaje.png" alt="mensajeria" class="message-imgage">
                     <div>3</div>
                 </li>
             </ul>
