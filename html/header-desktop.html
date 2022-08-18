@@ -20,10 +20,20 @@
         margin: 0;
         font-family: 'Shippori Antique', sans-serif;
     }
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
     nav{
+        background-color: #132C33;
+        box-shadow: 2px 2px 10px rgb(0,0,0);
+    }
+
+    nav .container{
         display: flex; 
         justify-content: space-between;
-        background-color: #132C33;
         padding: 10px;
         height: 80px;
     }
@@ -54,7 +64,6 @@
     }
 
     .logo-title span{
-        /*color: #EAB500;*/
         color: #51C4D3;
         font-family: 'Sofadi One', cursive;
         font-size: 1.2em;
@@ -78,8 +87,7 @@
     }
 
     .navbar-left a:hover{
-        background-color: #126E82;
-        color: #132C33;
+        color: #126E82;
         border-radius: 100%;
     }
 
@@ -104,26 +112,31 @@
         cursor: pointer;
     }
 
-    .navbar-right-message{
+    .navbar-right-shoppingCar{
         display: flex;
     }
 
-    .navbar-right-message img{
+    .navbar-right-shoppingCar img{
         width: 40px;
+        position: relative;
     }
 
-    .navbar-right-message div{
-        width: 30px;
-        height: 27px;
+    .navbar-right-shoppingCar div{
+        right: 5px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
         text-align: center;
         color: #D8E3E7;
         background-color: crimson;
         border-radius: 100%;
+        font-size: 0.7em;
     }
 
 </style>
 <body>
     <nav>
+        <div class="container">
         <img src="../icon/icon_menu.svg" alt="menu" class="menu">
         <div class="navbar-left">
             <div class="logo">
@@ -141,11 +154,12 @@
         <div class="navbar-right">
             <ul>
                 <li class="navbar-right-perfil">Perfil</li>
-                <li class="navbar-right-message">
-                    <img src="../icon/mensaje.png" alt="mensajeria" class="message-imgage">
+                <li class="navbar-right-shoppingCar">
+                    <img src="../icon/carro-de-la-carretilla.png" alt="carrito" class="shoppingCar-imgage">
                     <div>3</div>
                 </li>
             </ul>
+        </div>
         </div>
     </nav>
 </body>
