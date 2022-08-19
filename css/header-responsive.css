@@ -139,6 +139,7 @@
         animation-duration: 500ms;
         animation-iteration-count: 1;
         animation-direction: alternate;
+        animation-delay: 500ms;
     }
 
     .navbar-right-shoppingCar div{
@@ -155,6 +156,7 @@
         animation-duration: 500ms;
         animation-iteration-count: 1;
         animation-direction: alternate;
+        animation-delay: 500ms;
     }
 
     @media (max-width: 720px){

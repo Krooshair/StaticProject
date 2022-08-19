@@ -1,0 +1,185 @@
+/* font-family: 'Shippori Antique', sans-serif;
+    font-family: 'Sofadi One', cursive; */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+section{
+    background-color: #126E82;
+}
+
+section .container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.search-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search-column h2{
+    margin: 0;
+} 
+
+.search-column ul{
+    list-style: none;
+}
+
+.plataform{
+    padding: 20px 0px 10px;
+    text-align: justify ;
+}
+
+.plataform h2{
+    font-size: 2.3em;
+}
+
+.plataform ul{
+    text-align: justify;
+}
+
+.category{
+    padding: 10px 0px 10px;
+    text-align: justify;
+}
+
+.category h2{
+    font-size: 2.3em;
+}
+
+.category ul{
+    padding: 0px 0px 0px 25px;
+    text-align: justify;
+}
+
+.search-button button{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #132C33;
+    color: #D8E3E7;
+    transition: all 500ms ease;
+}
+
+.search-button button:hover{
+    background-color: #D8E3E7;
+    color: #132C33;
+    font-weight: bold;
+}
+
+.videogames-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    place-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card{
+    background-image: url(../icon/minecraft.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0;
+    background-size: 100%;
+    border-radius: 20px;
+    width: 280px;
+    transition: all 500ms ease;
+}
+
+.card:hover{
+    background-size: 120%;
+}
+
+.contents{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition: all 500ms ease;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.contents h2{
+    margin: 0;
+    font-size: 2.3em;
+}
+
+.contents button{
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+}
+
+.contents:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px 0px 10px 0px;
+}
+
+@media (max-width: 830px) {
+    .plataform{
+        padding: 0;
+        text-align: justify;
+    }
+    
+    .plataform ul{
+        padding: 0;
+        text-align: justify;
+    }
+    
+    .category{
+        padding: 0;
+        text-align: justify;
+    }
+    
+    .category ul{
+        padding: 0;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 500px){
+    section .container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .search-column{
+        display: none;
+    }
+    .videogames-card{
+        grid-template-columns: auto;
+    }
+}
