@@ -80,3 +80,59 @@
         transform: scale(1);
     }
 }
+
+/* ASIDE SHOPPINNG CART */
+
+@keyframes videogameShopColor {
+    0%{
+        color: crimson;
+    }
+
+    25%{
+        color: orange;
+    }
+
+    35%{
+        color: pink;
+    }
+
+    50%{
+        color: blueviolet;
+    }
+
+    65%{
+        color: rgb(178, 65, 253);
+    }
+
+    75%{
+        color: blue;
+    }
+}
+
+/* ASIDE PERFIL */
+
+@keyframes menuPerfil {
+    0%{
+        color: crimson;
+    }
+
+    25%{
+        color: orange;
+    }
+
+    35%{
+        color: pink;
+    }
+
+    50%{
+        color: blueviolet;
+    }
+
+    65%{
+        color: rgb(178, 65, 253);
+    }
+
+    75%{
+        color: blue;
+    }
+}

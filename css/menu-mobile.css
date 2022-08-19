@@ -1,0 +1,69 @@
+/* font-family: 'Shippori Antique', sans-serif;
+    font-family: 'Sofadi One', cursive; */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+/* MENU */
+
+.menu-mobile{
+    padding: 24px;
+    background-color: #132C33;
+}
+
+.title-menu{
+    text-decoration: none;
+    color: #D8E3E7;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color: #D8E3E7;
+}
+
+.menu-mobile ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+
+.menu-mobile ul:nth-child(1){
+    margin-top: 0;
+    border-bottom: 1px solid #D8E3E7;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 24px;
+}
+
+.usuary{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sign-out{
+    font-size: 14px;
+    color: #D8E3E7 !important;
+}
+
+/* SUBMENU */
+
+.submenu-category{
+    padding: 24px 0;
+    padding-left: 30px;
+    background-color: #126E82;
+}
+
+.title-submenu{
+    text-decoration: none;
+    color: #D8E3E7;
+    font-size: 1.3em;
+    font-weight: bold;
+}
